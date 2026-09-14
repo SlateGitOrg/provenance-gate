@@ -2,6 +2,22 @@
 
 > A SLSA provenance verifier that proves a binary came from the reviewed source - by rebuilding it, not by trusting the attestation.
 
+## Live deployment
+
+[![CI and deployment](https://github.com/SlateGitOrg/provenance-gate/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/SlateGitOrg/provenance-gate/actions/workflows/ci.yml)
+
+[Open the interactive Provenance Gate demo](https://slategitorg.github.io/provenance-gate/)
+
+The deployed interface uses a deterministic offline scenario to make the repository's tested decision rule visible without external services or private data.
+
+### Desktop
+
+![Provenance Gate desktop deployment](docs/assets/deployed-desktop.png)
+
+### Mobile
+
+<img src="docs/assets/deployed-mobile.png" alt="Provenance Gate mobile deployment" width="390">
+
 `FLAGSHIP` · **Cybersecurity** · Expert · ~5-6 weeks · Manufacturing - firmware and embedded build pipelines
 
 **Primary language:** Go
