@@ -1,6 +1,6 @@
 """Build provenance: attestation model, signing, and verification.
 
-THE DIFFERENTIATOR LIVES HERE.
+The core of the gate lives here.
 
 An SBOM tells you what is *in* a build. It does not tell you whether the build
 itself is trustworthy, and an attacker who owns your CI runner will emit an
@@ -17,7 +17,7 @@ do that. `rebuild.py` closes the loop.
 Signing here is HMAC-SHA256 with a local trust root, using only the standard
 library. Production uses Sigstore with x509 identities; the verification
 *shape* - authenticate, then check policy, then rebuild - is identical, and
-that shape is the part worth defending in an interview.
+that shape is what matters.
 """
 
 from __future__ import annotations
